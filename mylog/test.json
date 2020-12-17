@@ -1,0 +1,73 @@
+{
+  "name": "ser11_prepare_text",
+  "num_steps": 9,
+  "steps": [
+    {
+      "name": "mix_corpora",
+      "num_steps": 2932,
+      "steps": [
+        {
+          "index": 2931,
+          "name": "copy_individual",
+          "params": "args=(self(voice=hue_male_test, corpus=book_news),)_kwargs={'src': '/home2/Vbee_Corpus/RECORDING/TEST/NEWS/wav_origin/0007291.wav', 'dest': '/home2/Vbee_Corpus/RECORDING/TEST/BOOK_NEWS/wav_origin', 'index': 2931, 'max': 300, 'islast': True}"
+        }
+      ]
+    },
+    {
+      "name": "split train test",
+      "num_steps": 0,
+      "steps": []
+    },
+    {
+      "name": "write spk2gender",
+      "num_steps": 0,
+      "steps": []
+    },
+    {
+      "name": "write text",
+      "num_steps": 3,
+      "steps": [
+        {
+          "index": 3,
+          "name": "write_local_corpus",
+          "params": "args=(self(voice=hue_male_test, corpus=book_news),)_kwargs={'index': 3}"
+        }
+      ]
+    },
+    {
+      "name": "write phoneme",
+      "num_steps": 0,
+      "steps": []
+    },
+    {
+      "name": "write wav",
+      "num_steps": 0,
+      "steps": []
+    },
+    {
+      "name": "write utt2spk",
+      "num_steps": 2,
+      "steps": [
+        {
+          "index": 2,
+          "name": "write_test",
+          "params": "args=(self(voice=hue_male_test, corpus=book_news),)_kwargs={'index': 2}"
+        }
+      ]
+    },
+    {
+      "name": "write final train test list to file",
+      "num_steps": 0,
+      "steps": []
+    },
+    {
+      "name": "copy data folder",
+      "num_steps": 0,
+      "steps": []
+    }
+  ],
+  "test1": "test1",
+  "test2": "test2",
+  "test3": "test3",
+  "test4": "test4"
+}
